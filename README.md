@@ -6,6 +6,7 @@ Steps to success:
 2. Encode your target email to base64, Example: marvin_test@ok.de -> bWFydmluX3Rlc3RAb2suZGUNCg==
 3. Write this base64 string in the tag where your email should appear
 4. Instantiate a new MEmail.Obfuscator instance with parameter target (target is the tag you've chosen to have the base64 string in it)
+4.1 Target should always contain a unique id of a node element
 5. Call method show() and its encoded in a way 98% of bots won't notice (Maybe with time a bit more because of this github repo)
 
 Example code:
